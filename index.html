@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- https://www.w3schools.com/howto/howto_website_bootstrap.asp --> 
+<!-- Website Template: https://www.w3schools.com/howto/howto_website_bootstrap.asp --> 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,26 @@
 </head>
 <body>
 
+<!-- Progress Scroll Bar: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp --> 
+<div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+</script>
+  
+<!-- Header Image: https://www.themds.com/companies/uniqlo-grows-in-zaras-kingdom-studies-partnership-with-el-corte-ingles.html --> 
 <img class="header-image" src="./assets/header.jpeg" alt="uniqlo store"> 
-<!-- https://www.themds.com/companies/uniqlo-grows-in-zaras-kingdom-studies-partnership-with-el-corte-ingles.html --> 
 <div class="container">
   <h1>Uniqlo Self-Checkout Kiosk</h1>
   <h5>PROJECT PROMPT</h5>
@@ -66,8 +84,8 @@
       <p>Based on observations and user interviews, I created two personas that represent achetypes of people who typically use this kiosk. 
         These personas are represented through a "Thinks, Feels, Says, Does" empathy map.</p>
       <div class="banner-image">
+        <!-- Icons: href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Creartive - Flaticon --> 
         <img class="gallery-item" src="./assets/personas.png" alt="personas" width=100%>
-        <!-- href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Creartive - Flaticon --> 
       </div>
       <br>
 
