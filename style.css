@@ -111,3 +111,25 @@ p, li {
   padding-left: 5rem;
  }
 
+ /* Progress Scroll Bar: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgb(71, 130, 178);
+  width: 0%;
+}
+
